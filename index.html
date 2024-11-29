@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- locomotive-scroll  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loader-xbox" id="screenLoader"></div>
+
+    <main id="main">
+        <nav id="nav">
+            <a href="#" target="_blank"><img src="images/logo.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-square-xmark menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+        </nav>
+
+
+        <div id="content">
+            <div id="header">
+                <div class="container">
+                    <div class="header-text">
+                        <p>Full Stack Devloper</p>
+                        <h1>Hi,I'm <span>Amardeep</span> Singh<br>From India.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="sapration"></div>
+            <!-- -------------About----------- -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="about-col-2" id="about-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Welcome to our website, where we turn your digital dreams into captivating web realities.
+                                In
+                                today's fast-paced digital landscape, a visually appealing and user-friendly website is
+                                essential for success. Our team of expert web designers is here to create a unique
+                                online
+                                experience that not only engages your audience but also drives results.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Full Stack Web Development</span><br>With Modern, responsive designe and
+                                        Web/App
+                                        interface</li>
+                                    <li><span>Front-End</span><br>HTML, CSS, JavaScript, React</li>
+                                    <li><span>Back-End</span><br>MongoDB, Express, Nodejs, Python</li>
+                                    <li><span>Other</span><br>C language, Java, DSA[In c language]</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Fresher</span><br>Desiogning Web/App interface</li>
+                                    <li><span>Full-Stack</span><br>Web/App Devlopment </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Currently [2021-2025]</span><br>Currently prsuing Btech CS From Future
+                                        Inistitute
+                                        of Engineering & Technology,Bareilly</li>
+                                    <li><span>2021</span><br>Intermediate -80%</li>
+                                    <li><span>2019</span><br>High School -78.5%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------------- Services-------------- -->
+
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fas fa-code"></i>
+                            <h2>Web Design</h2>
+                            <p>your gateway to stunning digital experiences. As a web designer, I specialize in crafting
+                                captivating websites that engage and inspire. With a blend of creativity and technical
+                                expertise, I bring your vision to life with responsive designs that look amazing on any
+                                device.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="fas fa-crop-alt"></i>
+                            <h2>UI/UX Design</h2>
+                            <p>Specifically, UX designer responsibilities include strategy development, testing,
+                                implementation,
+                                and analysis of products/services and their overall designs. </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-app-store"></i>
+                            <h2>App Design</h2>
+                            <p>As an app designer, I specialize in crafting intuitive and visually captivating mobile
+                                experiences tailored to your unique needs. With a keen eye for detail and a passion for
+                                innovation, I bring your ideas to life through seamless UI/UX designs that captivate
+                                users
+                                from
+                                the first interaction. </p>
+                            <a href="#">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------portfolio--------------------- -->
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My Projects</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/music1.png" alt="">
+                            <div class="layer">
+                                <h3>Music App</h3>
+                                <p>Discover our elegant Music Player app, crafted with HTML, CSS, and JavaScript for a
+                                    smooth
+                                    listening experience. Enjoy a user-friendly interface that lets you effortlessly
+                                    play
+                                    and
+                                    control your favorite tracks.</p>
+                                <a href="https://amardeep-singh27017.github.io/web-musicApp/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img src="images/image3.png">
+                            <div class="layer">
+                                <h3>Todo List</h3>
+                                <p>I developed a Todo List application using HTML, CSS, and JavaScript that allows users
+                                    to
+                                    add,
+                                    edit, and delete tasks easily. The app features a responsive design for optimal
+                                    usability on
+                                    any device. Users can mark tasks as complete and filter their lists to focus on
+                                    priorities.
+                                </p>
+                                <a href="https://amardeep-singh27017.github.io/Todo_App/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img src="images/e-commerce.png">
+                            <div class="layer">
+                                <h3>E-commerce</h3>
+                                <p>I developed a dynamic e-commerce shopping website using HTML and CSS, designed to
+                                    provide
+                                    a
+                                    seamless shopping experience. The site features an intuitive product catalog, secure
+                                    payment
+                                    integration, and user-friendly navigation to enhance customer engagement. With
+                                    responsive
+                                    design principles.</p>
+                                <a href="https://amardeep-singh27017.github.io/E-commerce_website/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img src="images/clock.png">
+                            <div class="layer">
+                                <h3>Analog Clock</h3>
+                                <p>I created a functional analog clock using HTML, CSS, and JavaScript, showcasing
+                                    real-time
+                                    accuracy and a classic design. The clock features smoothly moving hands that reflect
+                                    the
+                                    current hours, minutes, and seconds. With a responsive layout.</p>
+                                <a href="https://amardeep-singh27017.github.io/Analog_clock/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img src="images/food.png">
+                            <div class="layer">
+                                <h3>Online Food</h3>
+                                <p>I designed and developed a user-friendly online food ordering website using HTML and
+                                    CSS,
+                                    featuring a responsive layout for seamless access on any device. </p>
+                                <a href="https://amardeep-singh27017.github.io/Food_website/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img src="images/health_club.png">
+                            <div class="layer">
+                                <h3>Health Club</h3>
+                                <p>I developed a responsive Health Club website using HTML and CSS, ensuring an engaging
+                                    user
+                                    experience across all devices. The clean and modern design highlights our services
+                                    and
+                                    promotes easy navigation.This project reflects my commitment to delivering
+                                    high-quality
+                                    web
+                                    solutions.</p>
+                                <a href="https://amardeep-singh27017.github.io/Health_Club/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <!-- --------------contact-------------- -->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fas fa-paper-plane"></i>Amar@example.com</p>
+                            <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+                            <div class="social-icon">
+                                <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                                <a href=""><i class="fab fa-twitter-square"></i></a>
+                                <a href="https://github.com/Amardeep-Singh27017"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/amardeep-singh-36609127b/"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                            <a href="./cover/cv.pdf" download="cv" class="btn btn2">DownLoad CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name..." required>
+                                <input type="email" name="Email" placeholder="Your Email..." required>
+                                <textarea name="Message" cols="6" rows="6" placeholder="Your Message..."></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy; Made with<i class="fas fa-heart"></i>Amar</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- locomotive-scroll  -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
