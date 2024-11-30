@@ -72,4 +72,13 @@ window.addEventListener('scroll', function () {
     }
 })
 
+function autoType(){
+    var typed = new Typed('.autotyped',{
+        strings:["HTML","CSS", "JavaScript", "Python", "MongoDB","Express.Js", "React.Js", "Node.Js"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    })
+}
+autoType();
 

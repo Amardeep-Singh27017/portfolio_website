@@ -26,6 +26,10 @@ html {
 .container {
     padding: 10px 8%;
 }
+/* auto type style  */
+.autotyped{
+    color: rgb(127, 249, 6);
+}
 
 nav {
     position: fixed;
